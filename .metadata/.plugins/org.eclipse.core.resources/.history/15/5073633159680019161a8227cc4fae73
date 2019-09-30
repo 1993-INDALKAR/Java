@@ -1,0 +1,64 @@
+package designHashSet;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+
+public class designHashSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "aab";
+		
+		 HashSet<Character> stringSet = new HashSet<Character>();
+	        
+	       
+	        char[] sArr = s.toCharArray();
+	        
+	        int length = sArr.length;
+	        
+	        int longSubStr = 0;
+	        
+	        int i = 0;
+	        int j = 0;
+	        
+	        for(i = 0;i<length;i++){
+	            for(j = i;j<length;j++){
+	                
+	                if(!stringSet.contains(sArr[j])){
+	                    stringSet.add(sArr[j]);
+	                }
+	                else{
+	                    
+	                    if(longSubStr < j-i){
+	                        longSubStr = j-i;
+	                    }
+	                    
+	                    stringSet.clear();
+	                    
+	                }
+	                
+	            }
+	        }
+	        
+	        if(longSubStr < j-i){
+	             longSubStr = j-i;
+	        }
+	        
+	        if(longSubStr == 0){
+	            return length;
+	        }
+	        
+//	        return  longSubStr;
+	        
+	        System.out.println(longSubStr);
+		
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,19 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int result = 1+2;
+		System.out.println(result);
+		
+		int previousResult = result;
+		System.out.println(previousResult);
+		
+		result = result + 45;
+		System.out.println(result);
+		System.out.println(previousResult);
+	}
+
+}

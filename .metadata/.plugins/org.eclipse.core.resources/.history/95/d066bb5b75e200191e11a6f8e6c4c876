@@ -1,0 +1,11 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float myMinFloatValue = Float.MIN_VALUE;
+		float myMaxFloatValue = Float.MAX_VALUE;
+	}
+
+}

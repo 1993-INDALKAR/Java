@@ -1,0 +1,15 @@
+package learnProgramming;
+//import learnProgramming.Car;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car porshe = new Car();
+		System.out.println(porshe.doors);
+		System.out.println("Model is "+ porshe.getModel());
+		porshe.setMode("Carrera");
+		System.out.println("Model is "+ porshe.getModel());
+		
+	}
+
+}

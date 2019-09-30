@@ -1,0 +1,26 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float myMinFloatValue = Float.MIN_VALUE;
+		float myMaxFloatValue = Float.MAX_VALUE;
+		System.out.println("Float Minimum Value = "+ myMinFloatValue);
+		System.out.println("Float Maximum Value = "+ myMaxFloatValue);
+		
+		double myMinDoubleValue = Double.MIN_VALUE;
+		double myMaxDoubleValue = Double.MAX_VALUE;
+		System.out.println("Double Minimum Value = "+ myMinDoubleValue);
+		System.out.println("Double Maximum Value = "+ myMaxDoubleValue);
+		
+		float myFloatNumber = 5f;
+		double myDoubleValue = 5d;
+		System.out.println(myFloatNumber);
+		System.out.println(myDoubleValue);
+		
+		int pound = 345;
+		double kilogram = (double)pound/0.45359237;
+	}
+
+}

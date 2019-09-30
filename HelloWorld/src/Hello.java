@@ -1,0 +1,15 @@
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World");
+		
+		int myFirstNumber = 35;
+		int mySecondNumber = 12;
+		int myThirdNumber = 6;
+		int myTotal = mySecondNumber + myThirdNumber + myFirstNumber;
+		System.out.println(myTotal);
+	}
+
+}

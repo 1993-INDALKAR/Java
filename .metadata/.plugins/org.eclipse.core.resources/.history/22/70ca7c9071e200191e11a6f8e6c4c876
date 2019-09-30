@@ -1,0 +1,19 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int myValue = 10000;
+		
+		int myMinIntValue= Integer.MIN_VALUE;
+		int myMaxIntValue = Integer.MAX_VALUE;
+		System.out.println("Integer Minimum Value = "+ myMinIntValue);
+		System.out.println("Integer Maximum Value = "+ myMaxIntValue);
+		
+		int myMaxIntTest = 2_14_74_83_647;
+
+	}
+
+}

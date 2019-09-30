@@ -1,0 +1,20 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float myMinFloatValue = Float.MIN_VALUE;
+		float myMaxFloatValue = Float.MAX_VALUE;
+		System.out.println("Float Minimum Value = "+ myMinFloatValue);
+		System.out.println("Float Maximum Value = "+ myMaxFloatValue);
+		
+		Double myMinDoubleValue = Double.MIN_VALUE;
+		Double myMaxDoubleValue = Double.MAX_VALUE;
+		System.out.println("Double Minimum Value = "+ myMinDoubleValue);
+		System.out.println("Double Maximum Value = "+ myMaxDoubleValue);
+		
+		
+	}
+
+}

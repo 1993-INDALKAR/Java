@@ -1,0 +1,21 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int newScore = calculateScore("Harish",500);
+		System.out.println("New SCore is "+ newScore);
+	}
+	
+	public static int calculateScore(String playerName,int score) {
+		System.out.println("Player "+ playerName + " scored " + score);
+		return score * 100;
+	}
+	
+	public static int calculateScore(int score) {
+		System.out.println("Unnamed player scored " + score);
+		return score * 100;
+	}
+
+}

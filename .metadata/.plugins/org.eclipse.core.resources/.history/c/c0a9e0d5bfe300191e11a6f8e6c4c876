@@ -1,0 +1,13 @@
+package learnProgramming;
+
+public class Car {
+	public int doors = 2;
+	private int wheels;
+	private String model;
+	private String engine;
+	private String colour;
+	
+	public void setMode(String model) {
+		this.model = model;
+	}
+}

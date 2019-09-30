@@ -1,0 +1,40 @@
+package designHashSet;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class designHashSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Map<Character,Integer> stringMap = new HashMap<Character,Integer>();
+	        
+	        int longSubStrCount = 0;
+	        int start = 0;
+	        
+	        char[] strArr = s.toCharArray();
+	        
+	        for(int i =0;i<strArr.length;i++){
+	            if(!stringMap.containsKey(strArr[i])){
+	                stringMap.put(strArr[i],0);
+	            }
+	            else{
+	                if(longSubStrCount < i-start){
+	                    longSubStrCount = i-start;
+	                    start = i+1;
+	                }
+	            }
+	        }
+	        
+	        // longSubStrCount++;
+	        
+	        System.out.println(longSubStrCount);
+		
+		
+	}
+	
+	
+
+}

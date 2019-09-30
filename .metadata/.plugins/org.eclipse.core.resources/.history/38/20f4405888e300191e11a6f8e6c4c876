@@ -1,0 +1,6 @@
+package learnProgramming;
+
+public class Car {
+	private int doors;
+
+}

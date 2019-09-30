@@ -1,0 +1,41 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int myValue = 10000;
+		
+		int myMinIntValue= Integer.MIN_VALUE;
+		int myMaxIntValue = Integer.MAX_VALUE;
+		System.out.println("Integer Minimum Value = "+ myMinIntValue);
+		System.out.println("Integer Maximum Value = "+ myMaxIntValue);
+		
+		int myMaxIntTest = 2_14_74_83_647;
+		System.out.println("Number with underscore = " + myMaxIntTest);
+		
+		byte myMinByteValue = Byte.MIN_VALUE;
+		byte myMaxByteValue = Byte.MAX_VALUE;
+		System.out.println("Byte Minimum Value = " +myMinByteValue);
+		System.out.println("Byte Maximum Value = " +myMaxByteValue);
+	
+		Short myMinShortValue = Short.MIN_VALUE;
+		Short myMaxShortValue = Short.MAX_VALUE;
+		System.out.println("Short Minimum Value = " +myMinShortValue);
+		System.out.println("Short Maximum Value = " +myMaxShortValue);
+	
+		long myLongValue = 2_14_74_83_647_234L;
+		System.out.println(myLongValue);
+		Long myMinLongValue = Long.MIN_VALUE;
+		Long myMaxLongValue = Long.MAX_VALUE;
+		System.out.println("Long Minimum Value = " +myMinLongValue);
+		System.out.println("Long Maximum Value = " +myMaxLongValue);
+	
+		byte myByteValue = (byte)(myMinByteValue/2);
+		
+		long mixTotal = 50000 + 10*(myMaxIntValue+myMaxByteValue+myMaxShortValue);
+		System.out.println("Total all Operations = "+mixTotal);
+	}
+
+}

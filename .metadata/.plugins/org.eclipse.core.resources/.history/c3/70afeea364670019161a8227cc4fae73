@@ -1,0 +1,43 @@
+package designHashSet;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class hashSetOpr {
+
+	
+	ArrayList<Integer> arr;
+	    
+	    /** Initialize your data structure here. */
+	    public hashSetOpr() {
+	        
+	    	this.arr = new ArrayList<>(Collections.nCopies(1000001, -1));
+	        
+	    }
+
+	    public void add(int key) {
+	        
+	        this.arr.add(key);
+	        
+	    }
+	    
+
+	    
+	    public void remove(int key) {
+	    	int index = this.arr.indexOf(key);
+	        this.put(index,-1);
+	    }
+	    
+	    
+	    public void put(int key, int value) {
+            this.arr.set(key,value);
+        }
+        
+        /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
+	    public int get(int key) {
+	        return this.arr.get(key);
+
+	    }
+	
+	
+	
+}

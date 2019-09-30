@@ -1,0 +1,20 @@
+package learnProgramming;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account harishAccount = new Account();
+//		harishAccount.withdraw(100);
+//		harishAccount.deposit(50);
+//		System.out.println("Harish's Account balance is "+harishAccount.getBalance());
+		harishAccount.setAccountNumber(789456123);
+		harishAccount.setCustomerName("Harish Indalkar");
+		harishAccount.setEmail("hindalka@stevens.edu");
+		harishAccount.setBalance(8000);
+		harishAccount.setPhoneNumber(789445451);
+		System.out.println("Harish's Account balance is "+harishAccount.getBalance());
+		
+	}
+
+}

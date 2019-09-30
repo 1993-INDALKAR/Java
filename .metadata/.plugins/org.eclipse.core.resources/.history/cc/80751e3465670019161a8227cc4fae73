@@ -1,0 +1,129 @@
+package designHashSet;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class hashSetOpr {
+
+//	char[][] board = { 
+//			{'5','3','.','.','7','.','.','.','.'},
+//			{'6','.','.','1','9','5','.','.','.'},
+//			{'.','9','8','.','.','.','.','6','.'},
+//			{'8','.','.','.','6','.','.','.','3'},
+//			{'4','.','.','8','.','3','.','.','1'},
+//			{'7','.','.','.','2','.','.','.','6'},
+//			{'.','6','.','.','.','.','2','8','.'},
+//			{'.','.','.','4','1','9','.','.','5'},
+//            {'.','.','.','.','8','.','.','7','9'}
+//	};
+	
+	System.out.println("hello");
+			
+//			
+	Map<Integer,List<Character>> boardMap = new HashMap<Integer,List<Character>>();
+	
+    Map<Integer,List<Character>> boardMapRow = new HashMap<Integer,List<Character>>();
+    
+    for(int i=0;i<9;i++){
+        for(int j = 0;j<9;j++){
+            
+            List<Character> list = new ArrayList<Character>();
+            
+            if(board[i][j] != '.')
+            {
+              
+                if(!boardMapRow.containsKey(i) ){
+                
+                list.add(board[i][j]);
+                boardMapRow.put(i,list);
+                
+            }
+            else{
+                
+                list = boardMapRow.get(i);
+                
+                int listSize = list.size();
+                
+                System.out.println(i + " " + j);
+                System.out.println("Board:"+board[i][j]);
+                System.out.println(boardMap.get(i));
+                System.out.println("List Size:"+listSize);
+                
+                
+                for (int k = 0; k < listSize; k++) {
+                    
+                    
+                    System.out.println(list.get(k));
+                    
+		              if(list.get(k) == board[i][j]){
+		            	  System.out.println("False");
+                      }
+                    else{
+                        list.add(board[i][j]);
+                        boardMapRow.put(i,list);
+                        // System.out.println(list);
+                    }
+	            }    
+            }
+                
+                
+            //****************************************************************************************
+            list.clear();
+            
+           
+            if(!boardMap.containsKey(j) ){
+                
+                // System.out.println(board[i][j]);
+                
+                list.add(board[i][j]);
+                boardMap.put(j,list);
+                
+            }
+            else{
+                
+                list = boardMap.get(j);
+                
+                // System.out.println(i +" "+ j);
+                // System.out.println("Size:"+list.size());
+                
+                
+                
+                int listSize = list.size();
+                
+//                System.out.println(i + " " + j);
+//                System.out.println("Board:"+board[i][j]);
+//                System.out.println(boardMap.get(j));
+//                System.out.println("List Size:"+listSize);
+                
+                for (int k = 0; k < listSize; k++) {
+                    
+//System.out.println(list.get(k));
+                    
+		              if(list.get(k) == board[i][j]){
+		            	  System.out.println("false");
+                      }
+                    else{
+                        list.add(board[i][j]);
+                        boardMap.put(j,list);
+                    }
+	            }
+                
+                
+                
+            }
+                
+            }
+            
+            
+        }
+    }
+    
+    System.out.println("True");
+    
+    
+    
+	
+	//**************************************************
+}
